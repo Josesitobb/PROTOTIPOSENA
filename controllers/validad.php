@@ -6,13 +6,13 @@
 include('db.php');
 
 // SE CAPTURAN LOS DATOS DEL FORMULARIO
-$username=$_POST['username'];
-$password=$_POST['passwword'];
+$username=$_POST['usernamelog'];
+$password=$_POST['passwordlog'];
 
 // SE INICIA SESION
 
 
-$consulta="SELECT * FROM `usuarios` WHERE  usuarios_nombres='$username' and usuario_contraseña='$password'";
+$consulta="SELECT * FROM `usuarios` WHERE  usuario_username='$username' and usuario_contraseña='$password'";
 
 // "SELECT * FROM `usuarios` WHERE usuario =	usuarios_nombres='$username' and usuario_contraseña = '$passowrd'";
 

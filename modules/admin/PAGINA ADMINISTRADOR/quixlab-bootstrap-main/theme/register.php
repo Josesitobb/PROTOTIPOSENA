@@ -1,8 +1,5 @@
 <?php
 
-
-
-// include("./db_register.php");
 include("./db_register.php");
 // RESIVIR DATOS
 $usernamereg=$_POST['usernamereg'];

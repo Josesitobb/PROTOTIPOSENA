@@ -5,7 +5,7 @@ $sql ="DELETE FROM `usuarios` WHERE idUSUARIOS = $id";
 $result = mysqli_query($conn,$sql);
 if($result){
 
-    header("Location:index.php");
+    header("Location:layout-blank.php");
 }
 
 else{

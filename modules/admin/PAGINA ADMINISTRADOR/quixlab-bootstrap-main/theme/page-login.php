@@ -43,13 +43,14 @@
                             <div class="card-body pt-5">
                                 <a class="text-center" href="index.php"> <h4>Rosella</h4></a>
         
-                                <form class="mt-5 mb-5 login-input" action="../../../../../controllers/validad.php">
+                                <form class="mt-5 mb-5 login-input" action="../../../../../controllers/validad.php" method="post">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Email" name="username">
+                                        <input type="text" class="form-control" placeholder="Nombre De usuario" name="usernamelog">
                                     </div>
                                     <div class="form-group">
-                                        <input type="password" class="form-control" placeholder="Password" name="passwword">
+                                        <input type="password" class="form-control" placeholder="Contraseña" name="passwordlog">
                                     </div>
+                                    
                                     <button class="btn login-form__btn submit w-100">Sign In</button>
                                 </form>
                                 <p class="mt-5 login-form__footer">Dont have account? <a href="page-register.php" class="text-primary">Sign Up</a> now</p>
