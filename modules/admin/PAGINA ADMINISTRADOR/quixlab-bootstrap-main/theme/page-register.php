@@ -43,15 +43,21 @@
                                 
                                     <a class="text-center" href="index.php"> <h4>Rosella</h4></a>
         
-                                <form class="mt-5 mb-5 login-input">
+                                <form class="mt-5 mb-5 login-input" action="./register.php" method="post">
                                     <div class="form-group">
-                                        <input type="text" class="form-control"  placeholder="Name" required>
+                                        <input type="text" class="form-control"  placeholder="Nombre" name="usernamereg" required>
                                     </div>
                                     <div class="form-group">
-                                        <input type="email" class="form-control"  placeholder="Email" required>
+                                        <input type="text" class="form-control"  placeholder="Apellido" name="lastnamereg" required>
                                     </div>
                                     <div class="form-group">
-                                        <input type="password" class="form-control" placeholder="Password" required>
+                                        <input type="text" class="form-control"  placeholder="Nombre De Usuario" name="nameuserg" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" placeholder="Contraseña" name="passwordreg" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Correo" name="emailreg" required>
                                     </div>
                                     <button class="btn login-form__btn submit w-100">Sign in</button>
                                 </form>

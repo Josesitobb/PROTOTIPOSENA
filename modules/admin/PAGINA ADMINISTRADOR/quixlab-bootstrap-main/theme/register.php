@@ -2,22 +2,25 @@
 
 
 
+// include("./db_register.php");
 include("./db_register.php");
 // RESIVIR DATOS
 $usernamereg=$_POST['usernamereg'];
-$emailreg=$_POST['emailreg'];
+$lastnamereg=$_POST['lastnamereg'];
+$nameuserg=$_POST['nameuserg'];
 $passwordreg=$_POST['passwordreg'];
+$emailreg=$_POST['emailreg'];
 // CONSULTA PARA INSENTAR
 
-$insert="INSERT INTO `usuarios`( `usuarios_nombres`, `usuario_contraseña`, `usuario_correo`, `ROLES_IdROLES`) VALUES ('$usernamereg','$passwordreg','$emailreg','1')";
-
+// $insert="INSERT INTO `usuarios`( `usuarios_nombres`, `usuario_contraseña`, `usuario_correo`, `ROLES_IdROLES`) VALUES ('$usernamereg','$passwordreg','$emailreg','1')";
+$insert="INSERT INTO `usuarios`(`usuarios_nombres`, `usuario_apellido`, `usuario_username`, `usuario_contraseña`, `usuario_correo`, `ROLES_IdROLES`) VALUES ('$usernamereg','$lastnamere','$nameuserg','$passwordreg','$emailreg','1')";
 
 // VERIFICAR CONSULTA USUARIOS
-$verify_username= mysqli_query($conexion,"SELECT * FROM `usuarios` WHERE `usuarios_nombres` ='$usernamereg'");
+$verify_username= mysqli_query($conexion,"SELECT * FROM `usuarios` WHERE `usuario_username` ='$nameuserg'");
 if(mysqli_num_rows($verify_username)>0){
     echo '<script>
 
-    alert("USUARIO YA ESTA EN USO GEI")
+    alert("EL NOMBRE DE USUARIO  YA ESTA EN USO")
     window.history.go(-1);
     </script>
     
@@ -30,7 +33,7 @@ $verify_correos= mysqli_query($conexion,"SELECT * FROM `usuarios` WHERE `usuario
 if(mysqli_num_rows($verify_correos)>0){
     echo '<script>
 
-    alert("CORREO YA ESTA EN USO GEI")
+    alert("CORREO YA ESTA REGISTRADO")
     window.history.go(-1);
     </script>
     
@@ -49,7 +52,7 @@ if(!$result){
     echo '<script>
 
     alert("usuario registrado");
-    window.location.replace("../../modules/company/PAGINA INICIAL/ice-cream-shop-website-template/index.html");
+    window.location.replace("../../../../company/PAGINA INICIAL/ice-cream-shop-website-template/index.html");
     // window.history.go(-1);
     </script>
     
