@@ -27,7 +27,16 @@ if($filas){
 $_SESSION['username']=$username;
     header("location:../modules/admin/PAGINA ADMINISTRADOR/quixlab-bootstrap-main/theme/index.php");
 }else{
-    include("../modules/users/LOGIN/login-form-04/index.html");
+    // include("../modules/users/LOGIN/login-form-04/index.html");
+    // header("location:");
+    echo '<script>
+
+    alert("DATOS INCORRECTOS");
+    
+    window.history.go(-1);
+    </script>
+    
+    ';
    
     ?>
 
