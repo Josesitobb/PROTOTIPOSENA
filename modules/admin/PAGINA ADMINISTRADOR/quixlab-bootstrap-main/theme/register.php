@@ -10,7 +10,7 @@ $emailreg=$_POST['emailreg'];
 // CONSULTA PARA INSENTAR
 
 // $insert="INSERT INTO `usuarios`( `usuarios_nombres`, `usuario_contraseña`, `usuario_correo`, `ROLES_IdROLES`) VALUES ('$usernamereg','$passwordreg','$emailreg','1')";
-$insert="INSERT INTO `usuarios`(`usuarios_nombres`, `usuario_apellido`, `usuario_username`, `usuario_contraseña`, `usuario_correo`, `ROLES_IdROLES`) VALUES ('$usernamereg','$lastnamere','$nameuserg','$passwordreg','$emailreg','1')";
+$insert="INSERT INTO `usuarios`(`usuarios_nombres`, `usuario_apellido`, `usuario_username`, `usuario_contraseña`, `usuario_correo`, `ROLES_IdROLES`) VALUES ('$usernamereg','$lastnamereg','$nameuserg','$passwordreg','$emailreg','1')";
 
 // VERIFICAR CONSULTA USUARIOS
 $verify_username= mysqli_query($conexion,"SELECT * FROM `usuarios` WHERE `usuario_username` ='$nameuserg'");
