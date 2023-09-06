@@ -44,7 +44,7 @@ crossorigin="anonymous">
 </head>
 <body>
     <nav class="navbar navbar-light justify-content-center fs-3 mb-5" style="background-color:#c6e5d9">
-        PHP CRUD MARYURI MUY BOT
+        EDITAR USUARIO
 </nav>
 
 <div class="container">
@@ -105,6 +105,6 @@ crossorigin="anonymous">
 </div>
 <!-- Bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <h1>Fino<h1>
+    
 </body>
 </html>
