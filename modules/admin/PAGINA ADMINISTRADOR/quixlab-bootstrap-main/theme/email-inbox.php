@@ -3,7 +3,7 @@ session_start();
 $varsesion=$_SESSION['username'];
 
 if($varsesion == null || $varsesion=''){
-    echo 'USTED INICIE GEI';
+    echo 'USTED INICIE SESION';
     die();
 }
 
