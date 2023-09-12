@@ -16,7 +16,7 @@ $sql="INSERT INTO `productos`(`idPRODUCTOS`, `producto_nombre`, `producto_precio
 $Resultado=$conn -> query($sql);
 
 if($Resultado){
-header('location:indexproductos.php');
+header('location:layout-one-column.php');
 }else{
     echo"no se inserto los datos";
 }

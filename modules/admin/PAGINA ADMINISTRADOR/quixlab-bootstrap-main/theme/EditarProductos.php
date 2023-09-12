@@ -21,7 +21,7 @@ $sql="UPDATE `productos` SET `idPRODUCTOS`=null,`producto_nombre`='$producto_nom
 $resultado = $conn -> query($sql);
 
 if($resultado){
-    header('location:indexproductos.php');
+    header('location:layout-one-column.php');
 }else{
     echo "no se edito el dato";
 }

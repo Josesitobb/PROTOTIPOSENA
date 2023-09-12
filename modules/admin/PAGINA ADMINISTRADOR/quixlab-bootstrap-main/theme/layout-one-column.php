@@ -1,8 +1,8 @@
 <?php
 session_start();
-$varsesion=$_SESSION['username'];
+$varsesion = $_SESSION['username'];
 
-if($varsesion == null || $varsesion=''){
+if ($varsesion == null || $varsesion = '') {
     echo 'USTED INICIE SESION';
     die();
 }
@@ -24,9 +24,7 @@ echo $_SESSION['username'];
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
     <!-- Custom Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
-rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
-crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 </head>
 
@@ -46,7 +44,7 @@ crossorigin="anonymous">
         Preloader end
     ********************-->
 
-    
+
     <!--**********************************
         Main wrapper start
     ***********************************-->
@@ -73,9 +71,9 @@ crossorigin="anonymous">
         <!--**********************************
             Header start
         ***********************************-->
-        <div class="header">    
+        <div class="header">
             <div class="header-content clearfix">
-                
+
                 <div class="nav-control">
                     <div class="hamburger">
                         <span class="toggle-icon"><i class="icon-menu"></i></span>
@@ -88,9 +86,9 @@ crossorigin="anonymous">
                         </div>
                         <input type="search" class="form-control" placeholder="Search Dashboard" aria-label="Search Dashboard">
                         <div class="drop-down   d-md-none">
-							<form action="#">
-								<input type="text" class="form-control" placeholder="Search">
-							</form>
+                            <form action="#">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -102,8 +100,8 @@ crossorigin="anonymous">
                             </a>
                             <div class="drop-down animated fadeIn dropdown-menu">
                                 <div class="dropdown-content-heading d-flex justify-content-between">
-                                    <span class="">3 New Messages</span>  
-                                    
+                                    <span class="">3 New Messages</span>
+
                                 </div>
                                 <div class="dropdown-content-body">
                                     <ul>
@@ -148,7 +146,7 @@ crossorigin="anonymous">
                                             </a>
                                         </li>
                                     </ul>
-                                    
+
                                 </div>
                             </div>
                         </li>
@@ -158,8 +156,8 @@ crossorigin="anonymous">
                             </a>
                             <div class="drop-down animated fadeIn dropdown-menu dropdown-notfication">
                                 <div class="dropdown-content-heading d-flex justify-content-between">
-                                    <span class="">2 New Notifications</span>  
-                                    
+                                    <span class="">2 New Notifications</span>
+
                                 </div>
                                 <div class="dropdown-content-body">
                                     <ul>
@@ -168,7 +166,7 @@ crossorigin="anonymous">
                                                 <span class="mr-3 avatar-icon bg-success-lighten-2"><i class="icon-present"></i></span>
                                                 <div class="notification-content">
                                                     <h6 class="notification-heading">Events near you</h6>
-                                                    <span class="notification-text">Within next 5 days</span> 
+                                                    <span class="notification-text">Within next 5 days</span>
                                                 </div>
                                             </a>
                                         </li>
@@ -177,7 +175,7 @@ crossorigin="anonymous">
                                                 <span class="mr-3 avatar-icon bg-danger-lighten-2"><i class="icon-present"></i></span>
                                                 <div class="notification-content">
                                                     <h6 class="notification-heading">Event Started</h6>
-                                                    <span class="notification-text">One hour ago</span> 
+                                                    <span class="notification-text">One hour ago</span>
                                                 </div>
                                             </a>
                                         </li>
@@ -195,18 +193,18 @@ crossorigin="anonymous">
                                                 <span class="mr-3 avatar-icon bg-danger-lighten-2"><i class="icon-present"></i></span>
                                                 <div class="notification-content">
                                                     <h6 class="notification-heading">Events to Join</h6>
-                                                    <span class="notification-text">After two days</span> 
+                                                    <span class="notification-text">After two days</span>
                                                 </div>
                                             </a>
                                         </li>
                                     </ul>
-                                    
+
                                 </div>
                             </div>
                         </li>
                         <li class="icons dropdown d-none d-md-flex">
-                            <a href="javascript:void(0)" class="log-user"  data-toggle="dropdown">
-                                <span>English</span>  <i class="fa fa-angle-down f-s-14" aria-hidden="true"></i>
+                            <a href="javascript:void(0)" class="log-user" data-toggle="dropdown">
+                                <span>English</span> <i class="fa fa-angle-down f-s-14" aria-hidden="true"></i>
                             </a>
                             <div class="drop-down dropdown-language animated fadeIn  dropdown-menu">
                                 <div class="dropdown-content-body">
@@ -218,7 +216,7 @@ crossorigin="anonymous">
                             </div>
                         </li>
                         <li class="icons dropdown">
-                            <div class="user-img c-pointer position-relative"   data-toggle="dropdown">
+                            <div class="user-img c-pointer position-relative" data-toggle="dropdown">
                                 <span class="activity active"></span>
                                 <img src="images/user/1.png" height="40" width="40" alt="">
                             </div>
@@ -229,9 +227,11 @@ crossorigin="anonymous">
                                             <a href="app-profile.php"><i class="icon-user"></i> <span>Profile</span></a>
                                         </li>
                                         <li>
-                                            <a href="email-inbox.php"><i class="icon-envelope-open"></i> <span>Inbox</span> <div class="badge gradient-3 badge-pill badge-primary">3</div></a>
+                                            <a href="email-inbox.php"><i class="icon-envelope-open"></i> <span>Inbox</span>
+                                                <div class="badge gradient-3 badge-pill badge-primary">3</div>
+                                            </a>
                                         </li>
-                                        
+
                                         <hr class="my-2">
                                         <li>
                                             <a href="page-lock.php"><i class="icon-lock"></i> <span>Lock Screen</span></a>
@@ -252,7 +252,7 @@ crossorigin="anonymous">
         <!--**********************************
             Sidebar start
         ***********************************-->
-        <div class="nk-sidebar">           
+        <div class="nk-sidebar">
             <div class="nk-nav-scroll">
                 <ul class="metismenu" id="menu">
                     <li class="nav-label">Dashboard</li>
@@ -278,8 +278,8 @@ crossorigin="anonymous">
                             <li><a href="./layout-horizontal.php">Horizontal</a></li>
                             <li><a href="./layout-boxed.php">Boxed</a></li>
                             <li><a href="./layout-wide.php">Wide</a></li>
-                            
-                            
+
+
                             <li><a href="./layout-fixed-header.php">Fixed Header</a></li>
                             <li><a href="layout-fixed-sidebar.php">Fixed Sidebar</a></li>
                         </ul>
@@ -339,7 +339,7 @@ crossorigin="anonymous">
                             <li><a href="./ui-progressbar.php">Progressbar</a></li>
                             <li><a href="./ui-tab.php">Tab</a></li>
                             <li><a href="./ui-typography.php">Typography</a></li>
-                        <!-- </ul>
+                            <!-- </ul>
                     </li>
                     <li>
                         <a class="has-arrow" href="javascript:void()" aria-expanded="false">
@@ -427,43 +427,101 @@ crossorigin="anonymous">
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores repellendus molestiae exercitationem voluptatem tempora quo dolore nostrum dolor consequuntur itaque, alias fugit. Architecto rerum animi velit, beatae corrupti quos nam saepe asperiores aliquid quae culpa ea reiciendis ipsam numquam laborum aperiam. Id tempore consequuntur velit vitae corporis, aspernatur praesentium ratione!</p>
+
+
+                                <div class="container">
+                                    <h1>Lista de productos</h1>
+                                </div>
+
+
+
+
+
+                                <div class="cotainer">
+
+                                    <br> <br>
+                                    <a href="./new_product.php" class="btn btn-dark">agregar nuevo producto</a>
+
+                                    <br> <br>
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">idPRODUCTOS</th>
+                                                <th scope="col">producto_nombre</th>
+                                                <th scope="col">producto_precio</th>
+                                                <th scope="col">producto_precio</th>
+                                                <th scope="col">Imagen_productos</th>
+                                                <th scope="col">acciones</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+                                            <?php
+
+                                            include("./db.php");
+                                            $sql = "SELECT * FROM `productos` ";
+                                            $resultado = $conn->query($sql);
+
+                                            while ($fila = $resultado->fetch_assoc()) { ?>
+
+
+
+
+
+                                                <tr>
+                                                    <th scope="row"><?php echo $fila['idPRODUCTOS'] ?></th>
+                                                    <th><?php echo $fila['producto_nombre'] ?></th>
+                                                    <th><?php echo $fila['producto_precio'] ?></th>
+                                                    <th><?php echo $fila['producto_cantidad'] ?></th>
+                                                    <th><img style="width: 200px;" src="data:image/jpg;base64,<?php echo base64_encode($fila['Imagen_productos'])  ?>" alt=""></th>
+                                                    <th><a class="btn  btn-warning" href="deleteProducto.php?id=<?php echo $fila['idPRODUCTOS'] ?>">eliminar</a>
+                                                        <a class="btn  btn-danger" href="vistas_Editar.php?Id=<?php echo $fila['idPRODUCTOS'] ?>">modificar</a>
+                                                    </th>
+
+                                                </tr>
+                                                </tr>
+                                        </tbody>
+
+                                    <?php } ?>
+                                    </table>
+                                </div>
+
+
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- #/ container -->
-            
-          
 
-            <?php
-            include("../../../../../views/CRUD CON IMAGENES/indexproductos.php");
-            ?>
-        <!--**********************************
+
+
+
+            <!--**********************************
             Footer start
         ***********************************-->
-        <div class="footer">
-            <div class="copyright">
-                <p>Copyright &copy; Designed & Developed by <a href="https://themeforest.net/user/quixlab">Quixlab</a> 2018</p>
+            <div class="footer">
+                <div class="copyright">
+                    <p>Copyright &copy; Designed & Developed by <a href="https://themeforest.net/user/quixlab">Quixlab</a> 2018</p>
+                </div>
             </div>
-        </div>
-        <!--**********************************
+            <!--**********************************
             Footer end
         ***********************************-->
-    </div>
-    <!--**********************************
+        </div>
+        <!--**********************************
         Main wrapper end
     ***********************************-->
 
-    <!--**********************************
+        <!--**********************************
         Scripts
     ***********************************-->
-    <script src="plugins/common/common.min.js"></script>
-    <script src="js/custom.min.js"></script>
-    <script src="js/settings.js"></script>
-    <script src="js/gleek.js"></script>
-    <script src="js/styleSwitcher.js"></script>
+        <script src="plugins/common/common.min.js"></script>
+        <script src="js/custom.min.js"></script>
+        <script src="js/settings.js"></script>
+        <script src="js/gleek.js"></script>
+        <script src="js/styleSwitcher.js"></script>
 
 </body>
 

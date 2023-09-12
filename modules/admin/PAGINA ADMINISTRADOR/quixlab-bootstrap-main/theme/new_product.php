@@ -37,7 +37,7 @@
         </div>
         
         <button type="submit" class="btn btn-primary">Enviar</button>
-        <a class="btn btn-info" href="./index.php">Cancelar</a>
+        <a class="btn btn-info" href="layout-one-column.php">Cancelar</a>
     </form>
    </div>
 </body>

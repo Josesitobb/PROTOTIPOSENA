@@ -55,7 +55,7 @@
 
             
             <button type="submit" class="btn btn-primary">Submit</button>
-            <a href="indexproductos.php" class="btn btn-info">Regresar</a>
+            <a href="layout-one-column.php" class="btn btn-info">Regresar</a>
         </form>
     </div>
 
