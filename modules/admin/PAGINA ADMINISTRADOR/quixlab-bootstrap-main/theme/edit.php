@@ -88,6 +88,7 @@ crossorigin="anonymous">
                 <input type="text" class="form-control" name="Contraseña" value="<?php echo $row['usuario_contraseña']?>">
         </div>
         <div class="col">
+            
                 <label class="form-label" for="">IDRol</label>
                 <input type="text" class="form-control" name="Rolesid" value="<?php echo $row['ROLES_IdROLES']?>">
             </div>

@@ -45,14 +45,14 @@
         
                                 <form class="mt-5 mb-5 login-input" action="./register.php" method="post">
                                     <div class="form-group">
-                                        <input type="text" class="form-control"  placeholder="Nombre" name="usernamereg" required>
+                                        <input type="text" class="form-control"  placeholder="Nombre" name="usernamereg" title="SOLO LETRAS CON ESPACIO,MAXIMO 10 CARACTERES" required pattern="(^[a-zA-Z]{1,10}[a-zA-Z]{1,10}$)">
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control"  placeholder="Apellido" name="lastnamereg" required>
+                                        <input type="text" class="form-control"  placeholder="Apellido" name="lastnamereg" title="SOLO LETRAS CON ESPACIO,MAXIMO 10 CARACTERES" required pattern="(^[a-zA-Z]{1,10}[a-zA-Z]{1,10}$)">
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control"  placeholder="Nombre De Usuario" name="nameuserg" required>
-                                    </div>
+                                        <input type="text" class="form-control"  placeholder="Nombre De Usuario" name="nameuserg"  title="SOLO LETRAS CON ESPACIO,MAXIMO 30 CARACTERES" required pattern="(^[a-zA-Z]{1,30}[a-zA-Z]{1,30}$)" >
+                                    </div> require
                                     <div class="form-group">
                                         <input type="password" class="form-control" placeholder="Contraseña" name="passwordreg" required>
                                     </div>
