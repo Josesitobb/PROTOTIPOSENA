@@ -1,8 +1,8 @@
 <?php
 session_start();
-$varsesion=$_SESSION['username'];
+$varsesion = $_SESSION['username'];
 
-if($varsesion == null || $varsesion=''){
+if ($varsesion == null || $varsesion = '') {
     echo 'USTED INICIE SESION';
     die();
 }
@@ -44,7 +44,7 @@ echo $_SESSION['username'];
         Preloader end
     ********************-->
 
-    
+
     <!--**********************************
         Main wrapper start
     ***********************************-->
@@ -71,9 +71,9 @@ echo $_SESSION['username'];
         <!--**********************************
             Header start
         ***********************************-->
-        <div class="header">    
+        <div class="header">
             <div class="header-content clearfix">
-                
+
                 <div class="nav-control">
                     <div class="hamburger">
                         <span class="toggle-icon"><i class="icon-menu"></i></span>
@@ -86,9 +86,9 @@ echo $_SESSION['username'];
                         </div>
                         <input type="search" class="form-control" placeholder="Search Dashboard" aria-label="Search Dashboard">
                         <div class="drop-down   d-md-none">
-							<form action="#">
-								<input type="text" class="form-control" placeholder="Search">
-							</form>
+                            <form action="#">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -100,8 +100,8 @@ echo $_SESSION['username'];
                             </a>
                             <div class="drop-down animated fadeIn dropdown-menu">
                                 <div class="dropdown-content-heading d-flex justify-content-between">
-                                    <span class="">3 New Messages</span>  
-                                    
+                                    <span class="">3 New Messages</span>
+
                                 </div>
                                 <div class="dropdown-content-body">
                                     <ul>
@@ -146,7 +146,7 @@ echo $_SESSION['username'];
                                             </a>
                                         </li>
                                     </ul>
-                                    
+
                                 </div>
                             </div>
                         </li>
@@ -156,8 +156,8 @@ echo $_SESSION['username'];
                             </a>
                             <div class="drop-down animated fadeIn dropdown-menu dropdown-notfication">
                                 <div class="dropdown-content-heading d-flex justify-content-between">
-                                    <span class="">2 New Notifications</span>  
-                                    
+                                    <span class="">2 New Notifications</span>
+
                                 </div>
                                 <div class="dropdown-content-body">
                                     <ul>
@@ -166,7 +166,7 @@ echo $_SESSION['username'];
                                                 <span class="mr-3 avatar-icon bg-success-lighten-2"><i class="icon-present"></i></span>
                                                 <div class="notification-content">
                                                     <h6 class="notification-heading">Events near you</h6>
-                                                    <span class="notification-text">Within next 5 days</span> 
+                                                    <span class="notification-text">Within next 5 days</span>
                                                 </div>
                                             </a>
                                         </li>
@@ -175,7 +175,7 @@ echo $_SESSION['username'];
                                                 <span class="mr-3 avatar-icon bg-danger-lighten-2"><i class="icon-present"></i></span>
                                                 <div class="notification-content">
                                                     <h6 class="notification-heading">Event Started</h6>
-                                                    <span class="notification-text">One hour ago</span> 
+                                                    <span class="notification-text">One hour ago</span>
                                                 </div>
                                             </a>
                                         </li>
@@ -193,18 +193,18 @@ echo $_SESSION['username'];
                                                 <span class="mr-3 avatar-icon bg-danger-lighten-2"><i class="icon-present"></i></span>
                                                 <div class="notification-content">
                                                     <h6 class="notification-heading">Events to Join</h6>
-                                                    <span class="notification-text">After two days</span> 
+                                                    <span class="notification-text">After two days</span>
                                                 </div>
                                             </a>
                                         </li>
                                     </ul>
-                                    
+
                                 </div>
                             </div>
                         </li>
                         <li class="icons dropdown d-none d-md-flex">
-                            <a href="javascript:void(0)" class="log-user"  data-toggle="dropdown">
-                                <span>English</span>  <i class="fa fa-angle-down f-s-14" aria-hidden="true"></i>
+                            <a href="javascript:void(0)" class="log-user" data-toggle="dropdown">
+                                <span>English</span> <i class="fa fa-angle-down f-s-14" aria-hidden="true"></i>
                             </a>
                             <div class="drop-down dropdown-language animated fadeIn  dropdown-menu">
                                 <div class="dropdown-content-body">
@@ -216,7 +216,7 @@ echo $_SESSION['username'];
                             </div>
                         </li>
                         <li class="icons dropdown">
-                            <div class="user-img c-pointer position-relative"   data-toggle="dropdown">
+                            <div class="user-img c-pointer position-relative" data-toggle="dropdown">
                                 <span class="activity active"></span>
                                 <img src="images/user/1.png" height="40" width="40" alt="">
                             </div>
@@ -227,9 +227,11 @@ echo $_SESSION['username'];
                                             <a href="app-profile.php"><i class="icon-user"></i> <span>Profile</span></a>
                                         </li>
                                         <li>
-                                            <a href="email-inbox.php"><i class="icon-envelope-open"></i> <span>Inbox</span> <div class="badge gradient-3 badge-pill badge-primary">3</div></a>
+                                            <a href="email-inbox.php"><i class="icon-envelope-open"></i> <span>Inbox</span>
+                                                <div class="badge gradient-3 badge-pill badge-primary">3</div>
+                                            </a>
                                         </li>
-                                        
+
                                         <hr class="my-2">
                                         <li>
                                             <a href="page-lock.php"><i class="icon-lock"></i> <span>Lock Screen</span></a>
@@ -250,7 +252,7 @@ echo $_SESSION['username'];
         <!--**********************************
             Sidebar start
         ***********************************-->
-        <div class="nk-sidebar">           
+        <div class="nk-sidebar">
             <div class="nk-nav-scroll">
                 <ul class="metismenu" id="menu">
                     <li class="nav-label">Dashboard</li>
@@ -276,8 +278,8 @@ echo $_SESSION['username'];
                             <li><a href="./layout-horizontal.php">Horizontal</a></li>
                             <li><a href="./layout-boxed.php">Boxed</a></li>
                             <li><a href="./layout-wide.php">Wide</a></li>
-                            
-                            
+
+
                             <li><a href="./layout-fixed-header.php">Fixed Header</a></li>
                             <li><a href="layout-fixed-sidebar.php">Fixed Sidebar</a></li>
                         </ul>
@@ -337,7 +339,7 @@ echo $_SESSION['username'];
                             <li><a href="./ui-progressbar.php">Progressbar</a></li>
                             <li><a href="./ui-tab.php">Tab</a></li>
                             <li><a href="./ui-typography.php">Typography</a></li>
-                        <!-- </ul>
+                            <!-- </ul>
                     </li>
                     <li>
                         <a class="has-arrow" href="javascript:void()" aria-expanded="false">
@@ -419,85 +421,115 @@ echo $_SESSION['username'];
                 </div>
             </div>
             <!-- row -->
+            <nav class="navbar navbar-light justify-content-center fs-3 mb-5" style="background-color:#c6e5d9">
+                AÑADIR NUEVO ROL
+            </nav>
+            <div class="container">
+                <?php
+                $i = 1;
+                ?>
+                <a href="add_newRol.php" class="btn btn-dark mb-3"> AÑADIR NUEVO ROL</a>
 
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col">
-                        <div class="card">
-                            <div class="card-body">
-                                <p>To make your sidebar style compact, please go to <code>gleek.js</code> file and make sure <code>sidebarStyle: "compact"</code> </p>
-<pre>
-    <code class="javascript">
-        (function($) {
-            "use strict"
+                <table class="table table-holver text-center">
+                    <thead class="table-danger">
+                        <tr>
+                            <th scope="col">No</th>
+                            <th scope="col">Nombre rol</th>
+                            <th scope="col">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                        include "db.php";
+                        $sql = "SELECT * FROM `roles`";
+                        $result = mysqli_query($conn, $sql);
+                        while ($row = mysqli_fetch_assoc($result)) {
+                        ?>
+                            <tr>
 
-            new quixSettings({
-                sidebarStyle: "compact"
-            });
 
-        })(jQuery);
-    </code>
-</pre>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
+                                <td><?php echo $i++ ?></td>
+                                <td><?php echo $row['Nombres_Roles'] ?> </td>
+                                <td>
+                                    <a href="editRol.php?id=<?php echo $row['IdROLES'] ?>" class="link-dark"><i class="fa-solid fa-pen-to-square fs-5 me-3"></i>Editar</a>
+                                    <a href="deleteRol.php?id=<?php echo $row['IdROLES'] ?>" class="link-dark"><i class="fa-solid fa-trash fs-5 "></i>Eliminar</a>
+
+                                </td>
+                            </tr>
+
+                        <?php
+
+                        }
+                        ?>
+
+
+
+
+                    </tbody>
+                </table>
             </div>
-            <!-- #/ container -->
-        </div>
-        <!--**********************************
+
+
+            <!-- Bootstrap -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+<!-- #/ container -->
+</div>
+<!--**********************************
             Content body end
         ***********************************-->
-        
-        
-        <!--**********************************
+
+
+<!--**********************************
             Footer start
         ***********************************-->
-        <div class="footer">
-            <div class="copyright">
-                <p>Copyright &copy; Designed & Developed by <a href="https://themeforest.net/user/quixlab">Quixlab</a> 2018</p>
-            </div>
-        </div>
-        <!--**********************************
+<div class="footer">
+    <div class="copyright">
+        <p>Copyright &copy; Designed & Developed by <a href="https://themeforest.net/user/quixlab">Quixlab</a> 2018</p>
+    </div>
+</div>
+<!--**********************************
             Footer end
         ***********************************-->
-    </div>
-    <!--**********************************
+</div>
+<!--**********************************
         Main wrapper end
     ***********************************-->
 
-    <!--**********************************
+<!--**********************************
         Scripts
     ***********************************-->
-    <script src="plugins/common/common.min.js"></script>
-    <script src="js/custom.min.js"></script>
-    <script src="js/settings.js"></script>
-    <script src="js/styleSwitcher.js"></script>
+<script src="plugins/common/common.min.js"></script>
+<script src="js/custom.min.js"></script>
+<script src="js/settings.js"></script>
+<script src="js/styleSwitcher.js"></script>
 
-    <script src="./plugins/highlightjs/highlight.pack.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+<script src="./plugins/highlightjs/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
 
-    <script>
-        (function($) {
+<script>
+    (function($) {
         "use strict"
 
-            new quixSettings({
-                version: "light", //2 options "light" and "dark"
-                layout: "vertical", //2 options, "vertical" and "horizontal"
-                navheaderBg: "color_1", //have 10 options, "color_1" to "color_10"
-                headerBg: "color_1", //have 10 options, "color_1" to "color_10"
-                sidebarStyle: "compact", //defines how sidebar should look like, options are: "full", "compact", "mini" and "overlay". If layout is "horizontal", sidebarStyle won't take "overlay" argument anymore, this will turn into "full" automatically!
-                sidebarBg: "color_1", //have 10 options, "color_1" to "color_10"
-                sidebarPosition: "static", //have two options, "static" and "fixed"
-                headerPosition: "static", //have two options, "static" and "fixed"
-                containerLayout: "wide",  //"boxed" and  "wide". If layout "vertical" and containerLayout "boxed", sidebarStyle will automatically turn into "overlay".
-                direction: "ltr" //"ltr" = Left to Right; "rtl" = Right to Left
-            });
+        new quixSettings({
+            version: "light", //2 options "light" and "dark"
+            layout: "vertical", //2 options, "vertical" and "horizontal"
+            navheaderBg: "color_1", //have 10 options, "color_1" to "color_10"
+            headerBg: "color_1", //have 10 options, "color_1" to "color_10"
+            sidebarStyle: "compact", //defines how sidebar should look like, options are: "full", "compact", "mini" and "overlay". If layout is "horizontal", sidebarStyle won't take "overlay" argument anymore, this will turn into "full" automatically!
+            sidebarBg: "color_1", //have 10 options, "color_1" to "color_10"
+            sidebarPosition: "static", //have two options, "static" and "fixed"
+            headerPosition: "static", //have two options, "static" and "fixed"
+            containerLayout: "wide", //"boxed" and  "wide". If layout "vertical" and containerLayout "boxed", sidebarStyle will automatically turn into "overlay".
+            direction: "ltr" //"ltr" = Left to Right; "rtl" = Right to Left
+        });
 
 
-        })(jQuery);
-    </script>
+    })(jQuery);
+</script>
+
 
 </body>
 

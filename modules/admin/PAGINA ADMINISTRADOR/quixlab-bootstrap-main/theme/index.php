@@ -295,7 +295,7 @@ echo $_SESSION['username'];
                             <li><a href="./layout-blank.php">Usuarios</a></li>
                             <li><a href="./layout-one-column.php">One Column</a></li>
                             <li><a href="./layout-two-column.php">Two column</a></li>
-                            <li><a href="./layout-compact-nav.php">Compact Nav</a></li>
+                            <li><a href="./layout-compact-nav.php">Roles </a></li>
                             <li><a href="./layout-vertical.php">Vertical</a></li>
                             <li><a href="./layout-horizontal.php">Horizontal</a></li>
                             <li><a href="./layout-boxed.php">Boxed</a></li>
