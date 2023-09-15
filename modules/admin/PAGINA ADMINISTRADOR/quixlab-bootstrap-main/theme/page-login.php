@@ -43,12 +43,12 @@
                             <div class="card-body pt-5">
                                 <a class="text-center" href="index.php"> <h4>Rosella</h4></a>
         
-                                <form class="mt-5 mb-5 login-input" action="../../../../../controllers/validad.php" method="post">
+                                <form class="mt-5 mb-5 login-input" action="../../../../../controllers/validad.php" method="post" onsubmit="return validarlogin();" >
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Nombre De usuario" name="usernamelog">
+                                        <input type="text" class="form-control" placeholder="Nombre De usuario" name="usernamelog" id="usernamelog" required/>
                                     </div>
                                     <div class="form-group">
-                                        <input type="password" class="form-control" placeholder="Contraseña" name="passwordlog">
+                                        <input type="password" class="form-control" placeholder="Contraseña" name="passwordlog" id="passwordlog" required/>
                                     </div>
                                     
                                     <button class="btn login-form__btn submit w-100">Sign In</button>
@@ -73,6 +73,8 @@
     <script src="js/settings.js"></script>
     <script src="js/gleek.js"></script>
     <script src="js/styleSwitcher.js"></script>
+    <script src="./js/validaciones/ValidacionLogin.js"></script>
+    
 </body>
 </html>
 
