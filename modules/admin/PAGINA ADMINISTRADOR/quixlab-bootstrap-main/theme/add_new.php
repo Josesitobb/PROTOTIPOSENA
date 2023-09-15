@@ -52,36 +52,36 @@ if (isset($_POST['Enviar'])) {
             <P class="text-muted">Porfa rellene toda las informacion para que pueda ingresar un usuario</P>
         </div>
         <div class="container d-flex justify-content-center">
-            <form action="" method="post" style="width:50vw; min-width:300px;">
+            <form action="" method="post" style="width:50vw; min-width:300px;" onsubmit="return ValidarNuevoUsuario();">
                 <div class="row mb-3">
                     <div class="col">
                         <label class="form-label" for="">Nombre</label>
-                        <input type="text" class="form-control" name="Nombre" placeholder="Pepito">
+                        <input type="text" class="form-control" name="Nombre" placeholder="Pepito" id="Nombre" required>
                     </div>
 
                     <div class="col">
                         <label class="form-label" for="">Apellido</label>
-                        <input type="text" class="form-control" name="Apellido" placeholder="Perez">
+                        <input type="text" class="form-control" name="Apellido" id="Apellido" placeholder="Perez"required>
                     </div>
 
                     <div class="col">
                         <label class="form-label" for="">Username</label>
-                        <input type="text" class="form-control" name="Username" placeholder="Example1234">
+                        <input type="text" class="form-control" name="Username" id="Username" placeholder="Example1234"required>
                     </div>
 
                 </div>
                 <div class="mb-3">
                     <label class="form-label" for="">Correo</label>
-                    <input type="text" class="form-control" name="Correo" placeholder="Pepitoperez@exaple.edu.co">
+                    <input type="text" class="form-control" name="Correo" id="Correo" placeholder="Pepitoperez@exaple.edu.co"required>
                 </div>
                 <div class="col">
                     <label class="form-label" for="">Contraseña</label>
-                    <input type="text" class="form-control" name="Contraseña" placeholder="exmple:123456789abc">
+                    <input type="text" class="form-control" name="Contraseña" id="Contraseña" placeholder="exmple:123456789abc"required>
                 </div>
 
                 <div class="col">
                     <label class="form-label" for="">Idrol</label>
-                    <input type="text" class="form-control" name="IdRol" placeholder="exmple:1=empleado,2=cliente">
+                    <input type="text" class="form-control" name="IdRol" id="IdRol" placeholder="exmple:1=empleado,2=cliente"required>
                 </div>
                 <div>
                     <br>
@@ -98,6 +98,7 @@ if (isset($_POST['Enviar'])) {
     </div>
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./js/validaciones/ValidacionNuevoUsuario.js"></script>
     <h1>Fino<h1>
 </body>
 

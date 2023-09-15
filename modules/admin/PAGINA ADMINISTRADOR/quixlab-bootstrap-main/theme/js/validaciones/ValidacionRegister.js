@@ -68,6 +68,7 @@ function validarRegister(){
         alert("solo puedes ingresar texto y numeros en contraseña")
         return false;
     }
+    // CAMPO CORREO
     
     else if (emailreg.length>100){
         alert("correo muy larog")

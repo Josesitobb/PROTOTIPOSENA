@@ -45,10 +45,10 @@
         
                                 <form class="mt-5 mb-5 login-input" action="../../../../../controllers/validad.php" method="post" onsubmit="return validarlogin();" >
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Nombre De usuario" name="usernamelog" id="usernamelog" require>
+                                        <input type="text" class="form-control" placeholder="Nombre De usuario" name="usernamelog" id="usernamelog" required/>
                                     </div>
                                     <div class="form-group">
-                                        <input type="password" class="form-control" placeholder="Contraseña" name="passwordlog" id="passwordlog" require>
+                                        <input type="password" class="form-control" placeholder="Contraseña" name="passwordlog" id="passwordlog" required/>
                                     </div>
                                     
                                     <button class="btn login-form__btn submit w-100">Sign In</button>

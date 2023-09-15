@@ -61,36 +61,36 @@ crossorigin="anonymous">
 
     ?>
     <div class="container d-flex justify-content-center">
-        <form action="" method="post" style="width:50vw; min-width:300px;">
+        <form action="" method="post" style="width:50vw; min-width:300px;" onsubmit="return ValidarEditarUsuario();">
         <div class="row mb-3">
             <div class="col">
                 <label class="form-label" for="">Nombre</label>
-                <input type="text" class="form-control" name="Nombre" value="<?php echo $row['usuarios_nombres']?>">
+                <input type="text" class="form-control" name="Nombre" id="Nombre" value="<?php echo $row['usuarios_nombres']?>">
             </div>
 
             <div class="col">
                 <label class="form-label" for="">Apellido</label>
-                <input type="text" class="form-control" name="Apellido" value="<?php echo $row['usuario_apellido']?>">
+                <input type="text" class="form-control" name="Apellido" id="Apellido"  value="<?php echo $row['usuario_apellido']?>">
             </div>
 
             <div class="col">
                 <label class="form-label" for="">username</label>
-                <input type="text" class="form-control" name="Username" value="<?php echo $row['usuario_username']?>">
+                <input type="text" class="form-control" name="Username" id="Username" value="<?php echo $row['usuario_username']?>">
             </div>
         </div>
         <div class="mb-3">
         <label class="form-label" for="">Correo</label>
-                <input type="text" class="form-control" name="Correo" value="<?php echo $row['usuario_correo']?>">
+                <input type="text" class="form-control" name="Correo" id="Correo" value="<?php echo $row['usuario_correo']?>">
         </div>
 
         <div class="col">
         <label class="form-label" for="">Contraseña</label>
-                <input type="text" class="form-control" name="Contraseña" value="<?php echo $row['usuario_contraseña']?>">
+                <input type="text" class="form-control" name="Contraseña" id="Contraseña" value="<?php echo $row['usuario_contraseña']?>">
         </div>
         <div class="col">
             
                 <label class="form-label" for="">IDRol</label>
-                <input type="text" class="form-control" name="Rolesid" value="<?php echo $row['ROLES_IdROLES']?>">
+                <input type="text" class="form-control" name="Rolesid" id="Rolesid" value="<?php echo $row['ROLES_IdROLES']?>">
             </div>
         <div >
         <button type="submit" class="btn btn-success margin=5px" name="Enviar"> Actualizar</button>
@@ -106,6 +106,7 @@ crossorigin="anonymous">
 </div>
 <!-- Bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="./js/validaciones/ValidarEditarUsuarios.js"></script>
     
 </body>
 </html>
