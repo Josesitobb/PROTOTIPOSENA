@@ -43,25 +43,29 @@
                                 
                                     <a class="text-center" href="index.php"> <h4>Rosella</h4></a>
         
-                                <form class="mt-5 mb-5 login-input" action="./register.php" method="post">
+                                <form class="mt-5 mb-5 login-input" action="./register.php" method="post"  onsubmit="return validarRegister();">
+                                    <!-- <h1>title="SOLO LETRAS CON ESPACIO,MAXIMO 10 CARACTERES" required pattern="(^[a-zA-Z]{1,10}[a-zA-Z]{1,10}$)" 
+                                    title="SOLO LETRAS CON ESPACIO,MAXIMO 10 CARACTERES" required pattern="(^[a-zA-Z]{1,10}[a-zA-Z]{1,10}$)"
+                                    title="SOLO LETRAS CON ESPACIO,MAXIMO 30 CARACTERES" required pattern="(^[a-zA-Z]{1,30}[a-zA-Z]{1,30}$)"
+                                    </h1> -->
                                     <div class="form-group">
-                                        <input type="text" class="form-control"  placeholder="Nombre" name="usernamereg" title="SOLO LETRAS CON ESPACIO,MAXIMO 10 CARACTERES" required pattern="(^[a-zA-Z]{1,10}[a-zA-Z]{1,10}$)">
+                                        <input type="text" class="form-control"  placeholder="Nombre" name="usernamereg" id="usernamereg" required >
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control"  placeholder="Apellido" name="lastnamereg" title="SOLO LETRAS CON ESPACIO,MAXIMO 10 CARACTERES" required pattern="(^[a-zA-Z]{1,10}[a-zA-Z]{1,10}$)">
+                                        <input type="text" class="form-control"  placeholder="Apellido" name="lastnamereg" id="lastnamereg" required >
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control"  placeholder="Nombre De Usuario" name="nameuserg"  title="SOLO LETRAS CON ESPACIO,MAXIMO 30 CARACTERES" required pattern="(^[a-zA-Z]{1,30}[a-zA-Z]{1,30}$)" >
-                                    </div> require
+                                        <input type="text" class="form-control"  placeholder="Nombre De Usuario" name="nameuserg"  id="nameuserg" required >
+                                    </div> 
                                     <div class="form-group">
-                                        <input type="password" class="form-control" placeholder="Contraseña" name="passwordreg" required>
+                                        <input type="password" class="form-control" placeholder="Contraseña" name="passwordreg" id="passwordreg" required >
                                     </div>
                                     <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Correo" name="emailreg" required>
+                                        <input type="email" class="form-control" placeholder="Correo" name="emailreg" id="emailreg" required >
                                     </div>
                                     <button class="btn login-form__btn submit w-100">Sign in</button>
                                 </form>
-                                    <p class="mt-5 login-form__footer">Have account <a href="page-login.php" class="text-primary">Sign Up </a> now</p>
+                                    <p class="mt-5 login-form__footer">Ya tiene cuenta <a href="page-login.php" class="text-primary">click aqui Up </a> :3</p>
                                     </p>
                                 </div>
                             </div>
@@ -83,6 +87,7 @@
     <script src="js/settings.js"></script>
     <script src="js/gleek.js"></script>
     <script src="js/styleSwitcher.js"></script>
+    <script src="./js/validaciones/ValidacionRegister.js"></script>
 </body>
 </html>
 
