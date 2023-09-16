@@ -24,7 +24,7 @@ function ValidacioProductos(){
 
     //Validacion si el capo NOMBRE PRODUCTOS contiene cosa "#"#"#"$
     else if (!expresion.test(Name_product)){
-        alert("solo letras y numeros ")
+        alert("solo letras  ")
         return false;
     }
 // validar si es campo es llenado por numeros

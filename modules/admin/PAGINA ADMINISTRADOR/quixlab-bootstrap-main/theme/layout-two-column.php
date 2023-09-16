@@ -423,14 +423,73 @@ echo $_SESSION['username'];
                     <div class="col">
                         <div class="card">
                             <div class="card-body">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores repellendus molestiae exercitationem voluptatem tempora quo dolore nostrum dolor consequuntur itaque, alias fugit. Architecto rerum animi velit, beatae corrupti quos nam saepe asperiores aliquid quae culpa ea reiciendis ipsam numquam laborum aperiam. Id tempore consequuntur velit vitae corporis, aspernatur praesentium ratione!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="card-body">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores repellendus molestiae exercitationem voluptatem tempora quo dolore nostrum dolor consequuntur itaque, alias fugit. Architecto rerum animi velit, beatae corrupti quos nam saepe asperiores aliquid quae culpa ea reiciendis ipsam numquam laborum aperiam. Id tempore consequuntur velit vitae corporis, aspernatur praesentium ratione!</p>
+                            <div class="container">
+        <br>
+        <h1>Lista de Servicio</h1>
+    </div>
+
+
+
+
+
+    <div class="cotainer">
+        <br>
+
+        <a href="./new_servicio.php" class="btn btn-dark">Agregar Nuevo Servicio</a>
+        <br>
+        <table class="table">
+            <br>
+            <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Servicio_Nombre</th>
+                    <th scope="col">Servicio_Precio</th>
+                    <th scope="col">Servicio_cantidad</th>
+                    <th scope="col">Servicio_Imagen</th>
+                    <th scope="col">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <?php
+
+                include("./db.php");
+                $sql = "SELECT * FROM `servicios` ";
+                $resultado = $conn->query($sql);
+
+                while ($fila = $resultado->fetch_assoc()) { ?>
+
+
+
+
+
+                    <tr>
+                        <th scope="row"><?php echo $fila['idSERVICIOS'] ?></th>
+                        <th><?php echo $fila['servicio_nombre'] ?></th>
+                        <th><?php echo $fila['servicio_valor'] ?></th>
+                        <th><?php echo $fila['servicio_cantidad'] ?></th>
+                        <th><img style="width: 200px;" src="data:image/jpg;base64,<?php echo base64_encode($fila['servicio_Imagen'])  ?>" alt=""></th>
+                        <th><a class="btn  btn-warning" href="deleteServicios.php?id=<?php echo $fila['idSERVICIOS'] ?>">eliminar</a>
+                            <a class="btn  btn-danger" href="vistas_Editar_Servicio.php?Id=<?php echo $fila['idSERVICIOS'] ?>">modificar</a>
+                        </th>
+
+                    </tr>
+                    </tr>
+            </tbody>
+
+        <?php } ?>
+        </table>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
                             </div>
                         </div>
                     </div>
@@ -462,6 +521,7 @@ echo $_SESSION['username'];
     <!--**********************************
         Scripts
     ***********************************-->
+    <script src="./js/validaciones/ValidacionProductos.js"></script>
     <script src="plugins/common/common.min.js"></script>
     <script src="js/custom.min.js"></script>
     <script src="js/settings.js"></script>
