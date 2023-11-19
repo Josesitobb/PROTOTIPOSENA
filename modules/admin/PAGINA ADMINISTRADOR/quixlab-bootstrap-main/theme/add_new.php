@@ -22,8 +22,6 @@ if (isset($_POST['Enviar'])) {
         echo "fallido" . mysqli_error($conn);
     }
 }
-
-
 ?>
 
 
@@ -38,7 +36,7 @@ if (isset($_POST['Enviar'])) {
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- FONS -->
-    <title>Maryuri</title>
+    <title>REGISTER</title>
 </head>
 
 <body>
@@ -52,7 +50,8 @@ if (isset($_POST['Enviar'])) {
             <P class="text-muted">Porfa rellene toda las informacion para que pueda ingresar un usuario</P>
         </div>
         <div class="container d-flex justify-content-center">
-            <form action="" method="post" style="width:50vw; min-width:300px;" onsubmit="return ValidarNuevoUsuario();">
+          
+        <form action="" method="post" style="width:50vw; min-width:300px;" onsubmit="return ValidarNuevoUsuario();">
                 <div class="row mb-3">
                     <div class="col">
                         <label class="form-label" for="">Nombre</label>
